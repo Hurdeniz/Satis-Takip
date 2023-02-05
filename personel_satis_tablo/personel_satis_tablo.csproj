@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{444F66D2-D642-4F2A-98D1-E7B92D1B2C72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>personel_satis_tablo</RootNamespace>
+    <AssemblyName>personel_satis_tablo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xtra_gecen_yil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_gecen_yil.Designer.cs">
+      <DependentUpon>Xtra_gecen_yil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_guncelle.Designer.cs">
+      <DependentUpon>Xtra_guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_magaza_detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_magaza_detay.Designer.cs">
+      <DependentUpon>Xtra_magaza_detay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_pers1_prim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_pers1_prim.Designer.cs">
+      <DependentUpon>Xtra_pers1_prim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_pers2_prim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_pers2_prim.Designer.cs">
+      <DependentUpon>Xtra_pers2_prim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_pers3_prim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_pers3_prim.Designer.cs">
+      <DependentUpon>Xtra_pers3_prim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_pers4_prim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_pers4_prim.Designer.cs">
+      <DependentUpon>Xtra_pers4_prim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_personel_kayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_personel_kayit.Designer.cs">
+      <DependentUpon>Xtra_personel_kayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_ana_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_ana_form.Designer.cs">
+      <DependentUpon>Xtra_ana_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_kota_bilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_kota_bilgileri.Designer.cs">
+      <DependentUpon>Xtra_kota_bilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_kota_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_kota_giris.Designer.cs">
+      <DependentUpon>Xtra_kota_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_pers1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_pers1.Designer.cs">
+      <DependentUpon>Xtra_pers1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_pers2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_pers2.Designer.cs">
+      <DependentUpon>Xtra_pers2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_pers3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_pers3.Designer.cs">
+      <DependentUpon>Xtra_pers3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_pers4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_pers4.Designer.cs">
+      <DependentUpon>Xtra_pers4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_pers_bilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_pers_bilgi.Designer.cs">
+      <DependentUpon>Xtra_pers_bilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_prim_hesap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_prim_hesap.Designer.cs">
+      <DependentUpon>Xtra_prim_hesap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_prim_sorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_prim_sorgu.Designer.cs">
+      <DependentUpon>Xtra_prim_sorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_satis_tablo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_satis_tablo.Designer.cs">
+      <DependentUpon>Xtra_satis_tablo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_tarih_degistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra_tarih_degistir.Designer.cs">
+      <DependentUpon>Xtra_tarih_degistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yardim.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Xtra_ana_form.resx">
+      <DependentUpon>Xtra_ana_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_gecen_yil.resx">
+      <DependentUpon>Xtra_gecen_yil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_guncelle.resx">
+      <DependentUpon>Xtra_guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_kota_bilgileri.resx">
+      <DependentUpon>Xtra_kota_bilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_kota_giris.resx">
+      <DependentUpon>Xtra_kota_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_magaza_detay.resx">
+      <DependentUpon>Xtra_magaza_detay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_pers1.resx">
+      <DependentUpon>Xtra_pers1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_pers1_prim.resx">
+      <DependentUpon>Xtra_pers1_prim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_pers2.resx">
+      <DependentUpon>Xtra_pers2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_pers2_prim.resx">
+      <DependentUpon>Xtra_pers2_prim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_pers3.resx">
+      <DependentUpon>Xtra_pers3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_pers3_prim.resx">
+      <DependentUpon>Xtra_pers3_prim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_pers4.resx">
+      <DependentUpon>Xtra_pers4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_pers4_prim.resx">
+      <DependentUpon>Xtra_pers4_prim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_personel_kayit.resx">
+      <DependentUpon>Xtra_personel_kayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_pers_bilgi.resx">
+      <DependentUpon>Xtra_pers_bilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_prim_hesap.resx">
+      <DependentUpon>Xtra_prim_hesap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_prim_sorgu.resx">
+      <DependentUpon>Xtra_prim_sorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_satis_tablo.resx">
+      <DependentUpon>Xtra_satis_tablo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_tarih_degistir.resx">
+      <DependentUpon>Xtra_tarih_degistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
